@@ -1,0 +1,101 @@
+.namebackground {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 40%, rgba(24, 14, 8, 0.75) 70%, rgba(37, 28, 19, 0.0) 95%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+}
+
+div.name {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.name {
+    text-align: center;
+}
+
+.name p {
+    font-size: 55px;
+    font-family: "Homer Simpson UI";
+    white-space: normal;
+}
+
+.name h5 {
+    font-family: "Homer Simpson UI";
+    white-space: normal;
+}
+
+.name div {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 10vw;
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+
+@-webkit-keyframes reveal {
+    80% {
+        letter-spacing: 10px;
+    }
+
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@keyframes reveal {
+    80% {
+        letter-spacing: 10px;
+    }
+
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@-webkit-keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #fff;
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #fff;
+    }
+}
+
+.containertypingdemo{
+    min-height: 120px;
+}
+
+.typing-demo {
+    width: 200px;
+    animation: typing 3s steps(40) infinite alternate, blink 0.5s step-end infinite alternate;
+    animation-delay: 3s;
+    white-space: nowrap;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+        padding-bottom: 0;
+    }
+}

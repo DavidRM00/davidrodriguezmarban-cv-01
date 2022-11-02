@@ -1,0 +1,68 @@
+.cardform {
+    position: relative;
+    min-height: 320px;
+    width: auto;
+    color: white;
+    background: url(../files/im.png) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:  11px 11px 18px #000000c4, -11px -11px 18px #282423c6;
+}
+
+.card__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(26, 25, 21, 0.8) 1%, rgba(46, 28, 15, 0.70) 28%, rgba(37, 28, 19, 0.50) 100%);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card__content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+}
+
+.card__title {
+    font-family: "Homer Simpson UI";
+    height: 50px;
+    color: white;
+
+}
+
+.card__subtitle {
+    padding-top: 10px;
+    font-family: "Homer Simpson UI";
+    font-style: oblique;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 30px;
+    height: 90px;
+
+}
+
+.card__description {
+    font-family: "Homer Simpson UI";
+    font-size: 14px;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+.cardform:hover .card__content {
+    transform: translateY(0);
+}
+
+.cardform:hover .card__description {
+    opacity: 1;
+    transition-delay: .25s;
+}

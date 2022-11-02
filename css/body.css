@@ -1,0 +1,154 @@
+video.background {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h5::selection , h6::selection , span::selection, img::selection{
+    color: darkgreen;
+    background-color: darkseagreen;
+}
+
+.leftcolbackground {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.centercolbackground {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    width: 100%;
+}
+
+.containerfoto img {
+    filter: grayscale();
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.30);
+    box-shadow: 11px 11px 18px #000000c4, -11px -11px 18px #342f2dc6;
+    transition: filter 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.containerfoto:hover img {
+    filter: none;
+    transform: scale3d(230px);
+
+}
+
+.txt {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    border-radius: 2em;
+    color: white;
+
+}
+
+.txtcenter {
+    font-family: "Homer Simpson UI";
+    font-size: 18px;
+    background: linear-gradient(0deg, rgba(26, 25, 21, 0.8) 1%, rgba(46, 28, 15, 0.70) 28%, rgba(37, 28, 19, 0.50) 100%);
+    box-shadow: 11px 11px 18px #000000c4, -11px -11px 18px #282423c6;
+    text-align: justify;
+    border-radius: 2em;
+    color: white;
+
+}
+
+.separador {
+    font-family: "Homer Simpson UI";
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.reflected {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+.reflected>* {
+    color: #ffffff;
+}
+
+.reflected> :last-child {
+    transform:
+        rotateX(180deg) translateY(18px);
+    mask-image:
+        linear-gradient(transparent 50%,
+            white 20%);
+    -webkit-mask-image:
+        linear-gradient(transparent 50%,
+            white 90%);
+    opacity: 0. 72;
+}
+
+.separadorleftcolcenter {
+    font-family: "Homer Simpson UI";
+    color: white;
+    letter-spacing: 5px;
+}
+
+.separadorleftcol {
+    font-family: "Homer Simpson UI";
+    padding-left: 2em;
+    padding-top: 2em;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.iam {
+    position: relative;
+    color: white;
+}
+
+.rotate-words {
+    display: grid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rotate-words h6 {
+    width: max-content;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+    opacity: 0;
+    transform-origin: 10% 90%;
+    animation: rotateWords 15s var(--d) linear infinite;
+}
+
+@keyframes rotateWords {
+    5% {
+        opacity: 1;
+    }
+
+    10%,
+    20% {
+        opacity: 1;
+        transform: rotate(1deg);
+    }
+
+    15% {
+        transform: rotate(-1deg);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(30px) rotate(2deg);
+    }
+}
+
+.mt-60 {
+    margin-top: 60px;
+}

@@ -1,0 +1,154 @@
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.skill {
+    width: 140px;
+    height: 135px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.skill:not(:last-child) {
+    margin-right: 5rem;
+}
+
+.skill::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0);
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill:nth-child(1) {
+    background-image: conic-gradient(#f16524 90%, transparent 0);
+    grid-column: 1;
+    grid-row: 1;
+    color: #f16524;
+}
+
+.skill:nth-child(2) {
+    background-image: conic-gradient(#1b84c1 75%, transparent 0);
+    grid-column: 2;
+    grid-row: 1;
+    color: #1b84c1;
+}
+
+.skill:nth-child(3) {
+    background-image: conic-gradient(#efd81d 60%, transparent 0);
+    grid-column: 3;
+    grid-row: 1;
+    color: #efd81d;
+}
+
+.skill:nth-child(4) {
+    background-image: conic-gradient(#787CB5 70%, transparent 0);
+    grid-column: 1;
+    grid-row: 2;
+    color: #787CB5;
+}
+
+.skill:nth-child(5) {
+    background-image: conic-gradient(#00758F 80%, transparent 0);
+    grid-column: 2;
+    grid-row: 2;
+    color: #00758F;
+}
+
+.skill:nth-child(6) {
+    background-image: conic-gradient(#F05340 70%, transparent 0);
+    grid-column: 3;
+    grid-row: 2;
+    color: #F05340;
+}
+
+.skills-wrapperxs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.skillxs {
+    width: 140px;
+    height: 135px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+/* .skillxs:not(:last-child) {
+    margin-right: 5rem;
+} */
+
+.skillxs::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0);
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skillxs:nth-child(1) {
+    background-image: conic-gradient(#f16524 90%, transparent 0);
+    grid-column: 1;
+    grid-row: 1;
+    color: #f16524;
+}
+
+.skillxs:nth-child(2) {
+    background-image: conic-gradient(#1b84c1 75%, transparent 0);
+    grid-column: 2;
+    grid-row: 1;
+    color: #1b84c1;
+}
+
+.skillxs:nth-child(3) {
+    background-image: conic-gradient(#efd81d 60%, transparent 0);
+    grid-column: 1;
+    grid-row: 2;
+    color: #efd81d;
+}
+
+.skillxs:nth-child(4) {
+    background-image: conic-gradient(#787CB5 70%, transparent 0);
+    grid-column: 2;
+    grid-row: 2;
+    color: #787CB5;
+}
+
+.skillxs:nth-child(5) {
+    background-image: conic-gradient(#00758F 80%, transparent 0);
+    grid-column: 1;
+    grid-row: 3;
+    color: #00758F;
+}
+
+.skillxs:nth-child(6) {
+    background-image: conic-gradient(#F05340 70%, transparent 0);
+    grid-column: 2;
+    grid-row: 3;
+    color: #F05340;
+}
+
+.contenedor {
+    font-size: 18px;
+    text-align: center;
+    z-index: 1;
+    font-family: "Homer Simpson UI";
+
+}
+
+.contenedor span {
+    display: block;
+}
