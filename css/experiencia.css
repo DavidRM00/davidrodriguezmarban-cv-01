@@ -1,7 +1,5 @@
 .timeline {
 position: relative;
-margin-top: 50px;
-margin-bottom: 50px;
 }
 
 .timeline:before {
@@ -34,6 +32,13 @@ background-color: #fff
     font-size: 22px;
     width: 80px;
     z-index: 2;
+}
+
+.timeline-date:hover {
+    background-color: black;
+    color: white;
+    transition-delay: 80ms;
+    transition-duration: 100ms;
 }
 
 .timeline-content {

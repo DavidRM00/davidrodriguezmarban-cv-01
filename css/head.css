@@ -3,6 +3,7 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     width: 100%;
+    padding-bottom: 3.5em;
 }
 
 div.name {
@@ -40,6 +41,41 @@ div.name {
     animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
 }
 
+.containertypingdemo{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.typing-demo {
+    width: 240px;
+    animation: typing 3s steps(15) infinite alternate, blink 0.35s step-end infinite alternate, glow 3000ms linear infinite 2500ms;
+    white-space: nowrap;
+    font-family: "Homer Simpson UI";
+    letter-spacing: 5px;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 18px;
+}
+
+@keyframes typing {
+    0% {
+        /* Estilos del primer frame (inicio de la animación) */
+        width: 0;
+    }
+    100% {
+        /* Estilos del último frame (final de la animación) */
+        width: 250px;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+        padding-bottom: 0;
+    }
+}
+
 @-webkit-keyframes reveal {
     80% {
         letter-spacing: 10px;
@@ -69,33 +105,5 @@ div.name {
 @keyframes glow {
     40% {
         text-shadow: 0 0 8px #fff;
-    }
-}
-
-.containertypingdemo{
-    min-height: 120px;
-}
-
-.typing-demo {
-    width: 200px;
-    animation: typing 3s steps(40) infinite alternate, blink 0.5s step-end infinite alternate;
-    animation-delay: 3s;
-    white-space: nowrap;
-    font-family: monospace;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 20px;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-        padding-bottom: 0;
     }
 }
