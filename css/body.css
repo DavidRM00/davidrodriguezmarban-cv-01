@@ -1,3 +1,8 @@
+*::selection {
+    color: darkgreen;
+    background-color: darkseagreen;
+}
+
 video.background {
     object-fit: cover;
     width: 100vw;
@@ -6,11 +11,6 @@ video.background {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h5::selection , h6::selection , span::selection, img::selection{
-    color: darkgreen;
-    background-color: darkseagreen;
 }
 
 .leftcolbackground {
@@ -25,6 +25,7 @@ p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h
 }
 
 .containerfoto img {
+    
     filter: grayscale();
     width: 210px;
     height: 210px;
@@ -39,7 +40,6 @@ p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h
 .containerfoto:hover img {
     filter: none;
     transform: scale3d(230px);
-
 }
 
 .txt {
@@ -53,7 +53,7 @@ p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h
 .txtcenter {
     font-family: "Homer Simpson UI";
     font-size: 18px;
-    background: linear-gradient(0deg, rgba(26, 25, 21, 0.8) 1%, rgba(46, 28, 15, 0.70) 28%, rgba(37, 28, 19, 0.50) 100%);
+    background: linear-gradient(340deg, rgba(0,0,0,1) 6%, rgba(26,15,17,1) 100%, rgba(34,20,23,1) 100%, rgba(49,29,17,1) 100%, rgba(59,35,13,1) 100%, rgba(79,48,4,1) 100%, rgba(118,94,60,1) 100%, rgba(132,111,80,1) 100%, rgba(143,124,96,1) 100%, rgba(159,142,118,1) 100%, rgba(194,183,168,1) 100%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);
     box-shadow: 11px 11px 18px #000000c4, -11px -11px 18px #282423c6;
     text-align: justify;
     border-radius: 2em;
@@ -84,10 +84,10 @@ p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h
     transform:
         rotateX(180deg) translateY(18px);
     mask-image:
-        linear-gradient(transparent 50%,
+        linear-gradient(transparent 20%,
             white 20%);
     -webkit-mask-image:
-        linear-gradient(transparent 50%,
+        linear-gradient(transparent 60%,
             white 90%);
     opacity: 0. 72;
 }
@@ -112,10 +112,10 @@ p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h
 }
 
 .rotate-words {
-    display: grid;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 4em;
 }
 
 .rotate-words h6 {
@@ -125,7 +125,7 @@ p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h
     color: black;
     opacity: 0;
     transform-origin: 10% 90%;
-    animation: rotateWords 15s var(--d) linear infinite;
+    animation: rotateWords 15s var(--d) ease-in-out infinite;
 }
 
 @keyframes rotateWords {
@@ -149,6 +149,53 @@ p::selection , h1::selection , h2::selection , h3::selection , h4::selection , h
     }
 }
 
+.no-seleccionable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
 .mt-60 {
     margin-top: 60px;
 }
+
+.space-invader {
+    /* Modify size here: */
+    --block-size: 5px;
+  
+    box-shadow: 0 0 0 var(--block-size) #333,
+    0 var(--block-size) 0 var(--block-size) #333,
+    calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+    calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+    calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #333,
+    calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #333,
+    calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #333,
+    calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #333,
+    calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #333,
+    calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #333,
+    calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #333,
+    calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #333,
+    calc(var(--block-size) * -4) 0 0 0 #333,
+    calc(var(--block-size) * -3) 0 0 0 #333,
+    calc(var(--block-size) * 3) 0 0 0 #333,
+    calc(var(--block-size) * 4) 0 0 0 #333,
+    calc(var(--block-size) * -5) var(--block-size) 0 0 #333,
+    calc(var(--block-size) * -4) var(--block-size) 0 0 #333,
+    calc(var(--block-size) * 4) var(--block-size) 0 0 #333,
+    calc(var(--block-size) * 5) var(--block-size) 0 0 #333,
+    calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #333,
+    calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #333,
+    calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #333,
+    calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #333,
+    calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #333,
+    calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #333,
+    calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #333,
+    calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #333,
+    var(--block-size) calc(var(--block-size) * 4) 0 0 #333,
+    calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #333;
+    background: #333;
+    width: var(--block-size);
+    height: var(--block-size);
+    overflow: hidden;
+  }

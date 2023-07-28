@@ -3,11 +3,36 @@
     min-height: 320px;
     width: auto;
     color: white;
-    background: url(../files/im.png) center no-repeat;
     background-size: cover;
     border-radius: 20px;
     overflow: hidden;
     box-shadow:  11px 11px 18px #000000c4, -11px -11px 18px #282423c6;
+}
+
+/* Card 1 */
+.cardform.card1 {
+    background: url(../files/gmasir.jpeg) center/cover no-repeat;
+    filter: grayscale();
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Card 2 */
+.cardform.card2 {
+    background: url(../files/gsdaw.jpeg) center/cover no-repeat;
+    filter: grayscale();
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Card 3 */
+.cardform.card3 {
+    background: url(../files/gsdam.jpeg) center/cover no-repeat;
+    filter: grayscale();
+    transition: filter 0.5s ease-in-out;
+}
+
+.cardform.card1:hover,.cardform.card2:hover,.cardform.card3:hover {
+    filter: none;
+    transform: scale3d(230px);
 }
 
 .card__content {
@@ -16,7 +41,7 @@
     bottom: 0;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(0deg, rgba(26, 25, 21, 0.8) 1%, rgba(46, 28, 15, 0.70) 28%, rgba(37, 28, 19, 0.50) 100%);
+    background: linear-gradient(0deg, rgba(10, 5, 0, 0.98) 1%, rgba(20, 10, 0, 0.9) 28%, rgba(15, 5, 0, 0.8) 100%);
     border-top-left-radius: 20px;
     transform: translateY(70px);
     transition: transform .25s;

@@ -12,6 +12,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/formacion.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/skills.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/shapecv.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/experiencia.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -51,8 +52,8 @@
                 <!-- FOTO David -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="p-5 m-4 containerfoto mx-auto">
-                            <img src="files/fotodavid.png" class="mx-auto">
+                        <div oncontextmenu="return false;" class="p-5 m-4 containerfoto mx-auto no-seleccionable">
+                            <img src="files/fotodavid.png" class="no-seleccionable mx-auto" draggable="false">
                         </div>
                     </div>
                 </div>
@@ -64,12 +65,12 @@
                             <h4 class="text-center">¿QUIEN SOY?</h4>
                         </div>
                         <div class="separadorleftcolcenter iam">
-                            <h4 class="text-center">Mi nombre es David Rodríguez Marbán</h4>
+                            <h4 class="text-center">Mi nombre es David Rodríguez Marbán</h4><br>
                             <h5 class="mt-3 text-center">Profesional </h5>
                             <div class="rotate-words text-center">
-                                <h6 style="--d: 0s">UI UX Designer</h6>
-                                <h6 style="--d: 4s">Full Stack</h6>
-                                <h6 style="--d: 8s">Web Developer</h6>
+                                <h6 style="--d: 0s"> UI UX Designer </h6>
+                                <h6 style="--d: 4s"> Full Stack </h6>
+                                <h6 style="--d: 8s"> Web Developer </h6>
                             </div>
                         </div>
                     </div>
@@ -146,7 +147,7 @@
                     <div class="col-12">
                         <div class="separador reflected">
                             <h3>SOBRE MI</h3>
-                            <h3>SOBRE MI</h3>
+                            <h3 class="no-seleccionable">SOBRE MI</h3>
                         </div>
                     </div>
                 </div>
@@ -170,14 +171,14 @@
                     <div class="col-12">
                         <div class="separador reflected reflected">
                             <h3>ESTUDIOS</h3>
-                            <h3>ESTUDIOS</h3>
+                            <h3 class="no-seleccionable">ESTUDIOS</h3>
                         </div>
                     </div>
                 </div>
                 <!-- CARDS ESTUDIOS -->
                 <div class="row">
                     <div class="col-12 col-lg-4 col-md-6">
-                        <article class="cardform my-3">
+                        <article class="cardform card1 my-3">
                             <div class="card__content">
                                 <h4 class="card__title">GRADO MEDIO</h4>
                                 <span class="card__subtitle">SISTEMAS MICROINFORMÁTICOS Y REDES</span>
@@ -186,7 +187,7 @@
                         </article>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
-                        <article class="cardform my-3">
+                        <article class="cardform card2 my-3">
                             <div class="card__content">
                                 <h4 class="card__title">GRADO SUPERIOR</h4>
                                 <span class="card__subtitle">DESARROLLO DE APLICACIONES MULTIPLATAFORMA</span>
@@ -195,7 +196,7 @@
                         </article>
                     </div>
                     <div class="col-12 col-lg-4 col-md-12">
-                        <article class="cardform my-3 ">
+                        <article class="cardform card3 my-3 ">
                             <div class="card__content">
                                 <h4 class="card__title">GRADO SUPERIOR</h4>
                                 <span class="card__subtitle">DESARROLLO DE APLICACIONES WEB</span>
@@ -219,7 +220,7 @@
                     </div>
                 </div>
 
-                <!-- NIVEL SKILLS -->
+                <!-- TEXTO ESTUDIOS Y FORMACION -->
                 <div class="row">
                     <div class="col-12">
                         <div class="p-4 m-4 txtcenter">
@@ -232,6 +233,54 @@
                         </div>
                     </div>
                 </div>
+                <!-- FIN TEXTO ESTUDIOS Y FORMACION -->
+
+                <!-- EXPERIENCIA LABORAL -->
+                <!-- ENCABEZADO EXPERIENCIA -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="separador reflected">
+                            <h3>EXPERIENCIA LABORAL</h3>
+                            <h3 class="no-seleccionable">EXPERIENCIA LABORAL</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- LINEA TEMPORAL EXPERIENCIA -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="timeline">
+                            <div class="timeline-item timeline-right">
+                                <div class="timeline-date bold">2019</div>
+                                <div class="timeline-content">Evento 1: "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ex ea commodo consequat. Duis aute irure dolor in repreherit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur."</div>
+                            </div>
+                            <div class="timeline-item timeline-left">
+                                <div class="timeline-date bold">2021</div>
+                                <div class="timeline-content">Evento 2: "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ex ea commodo consequat. Duis aute irure dolor in repreherit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur."</div>
+                            </div>
+                            <div class="timeline-item timeline-right">
+                                <div class="timeline-date bold">2022</div>
+                                <div class="timeline-content">Evento 3: "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ex ea commodo consequat. Duis aute irure dolor in repreherit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur."</div>
+                            </div>
+                            <div class="timeline-item timeline-left">
+                                <div class="timeline-date bold">2023</div>
+                                <div class="timeline-content">Evento 4: "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ex ea commodo consequat. Duis aute irure dolor in repreherit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur."</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN EXPERIENCIA LABORAL -->
 
                 <!-- SKILLS -->
                 <!-- ENCABEZADO SKILLS -->
@@ -239,7 +288,7 @@
                     <div class="col-12">
                         <div class="separador reflected">
                             <h3>CONOCIMIENTOS</h3>
-                            <h3>CONOCIMIENTOS</h3>
+                            <h3 class="no-seleccionable">CONOCIMIENTOS</h3>
                         </div>
                     </div>
                 </div>
