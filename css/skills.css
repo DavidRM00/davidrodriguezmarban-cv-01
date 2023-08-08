@@ -74,7 +74,11 @@
 .skills-wrapperxs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
 }
+
 .skillxs {
     width: 140px;
     height: 135px;
@@ -84,10 +88,6 @@
     display: grid;
     place-items: center;
 }
-
-/* .skillxs:not(:last-child) {
-    margin-right: 5rem;
-} */
 
 .skillxs::before {
     content: "";

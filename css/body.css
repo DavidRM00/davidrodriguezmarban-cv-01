@@ -66,6 +66,10 @@ video.background {
 
 }
 
+.container2 {
+    --bs-gutter-x: 0rem;
+}
+
 .separador {
     font-family: "Homer Simpson UI";
     padding-top: 2em;
