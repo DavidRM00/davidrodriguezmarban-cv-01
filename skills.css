@@ -3,8 +3,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-
-
 .skill {
     width: 140px;
     height: 135px;
@@ -76,12 +74,11 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 1rem;
 }
 
 .skillxs {
     width: 100px;
-    height: 100px;
+    height: 95px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     position: relative;
