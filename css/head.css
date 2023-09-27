@@ -7,25 +7,16 @@
 }
 
 div.name {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-}
-
-.name {
+    align-items: center;
     text-align: center;
+    flex-direction: column; /* Para alinear verticalmente en dispositivos móviles */
 }
 
+/* Estilos para el texto dentro de .name */
 .name p {
     font-size: 55px;
-    font-family: "Homer Simpson UI";
-    white-space: normal;
-}
-
-.name h5 {
     font-family: "Homer Simpson UI";
     white-space: normal;
 }
@@ -41,7 +32,13 @@ div.name {
     animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
 }
 
-.containertypingdemo{
+/* Estilos para el título dentro de .name */
+.name h5 {
+    font-family: "Homer Simpson UI";
+    white-space: normal;
+}
+
+.containertypingdemo {
     display: flex;
     justify-content: center;
     color: #fff;
@@ -63,6 +60,7 @@ div.name {
         /* Estilos del primer frame (inicio de la animación) */
         width: 0;
     }
+
     100% {
         /* Estilos del último frame (final de la animación) */
         width: 250px;
@@ -105,5 +103,38 @@ div.name {
 @keyframes glow {
     40% {
         text-shadow: 0 0 8px #fff;
+    }
+}
+
+@media (max-width: 420px) {
+    .name p {
+        font-size: 13vw;
+    }
+
+    .typing-demo{
+        font-size: 3vw;
+        letter-spacing: 3px;
+
+    }
+    
+
+    @-webkit-keyframes reveal {
+        80% {
+            letter-spacing: 2px;
+        }
+
+        100% {
+            background-size: 300% 300%;
+        }
+    }
+
+    @keyframes reveal {
+        80% {
+            letter-spacing: 2px;
+        }
+
+        100% {
+            background-size: 300% 300%;
+        }
     }
 }
