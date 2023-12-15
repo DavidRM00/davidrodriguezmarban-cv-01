@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CV - David Rodriguez Marban</title>
+    <meta name="description" content="CV - David Rodriguez Marban" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="keywords"
+        content="david rodriguez marban, david marban, rodriguez marban, CV - David Rodriguez Marban, CV David Rodriguez Marban, davidrodriguezmarban" />
+    <meta name="author" content="David Rodriguez Marban" />
+    <meta name="copyright" content="David Rodriguez Marban" />
+    <meta name="robots" content="follow" />
+    <meta name="robots" content="index" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.davidrodriguezmarban.es/" />
+    <link rel="icon" type="image/jpg" href="files/favicon.png" />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/head.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/body.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/socialmedia.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/formacion.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/skills.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/shapecv.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/experiencia.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <title>Agrandar Div con JavaScript</title>
+    <style>
+        .miDiv {
+            height: 2px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .miDiv.ampliado {
+            height: auto;
+        }
+
+        .texto-oculto {
+            display: none;
+        }
+
+        .texto-oculto.mostrado {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="lista timeline">
+                        <ol class="text-center">
+                            <li>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fab fa-python" style="color: #2462f0;"></i>&nbsp;&nbsp;Full-Stack
+                                        Python
+                                        Developer
+                                    </div>
+                                    <div class="card-body">
+                                        <small class="text-muted">Proxya.<br>
+                                            Av. San Francisco Javier, 15, primera planta, 41005 Sevilla.<br>
+                                            +34 954 50 20 95
+                                        </small>
+                                    </div>
+                                    <!-- <div class="card-footer">
+                                        <div class="clearfix">
+                                            <div class="float-right">
+                                                <button class="btn btn-success">Botão de Acesso</button>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fab fa-php" style="color: #8993be;"></i>&nbsp;&nbsp;
+                                        Full-Stack PHP Developer (Laravel)
+                                    </div>
+                                    <div class="card-body">
+                                        <small class="text-muted">Gestiona Bussines Solution
+                                            SL.<br>
+                                            C. Orfila, 8, 41003 Sevilla.<br>
+                                            +34 954 56 35 71
+                                        </small>
+                                    </div>
+                                    <!-- <div class="card-footer">
+                                        <div class="clearfix">
+                                            <div class="float-right">
+                                                <button class="btn btn-success">Botão de Acesso</button>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fab fa-java" style="color: red;"></i>&nbsp;&nbsp;
+                                        Full-Stack Java Developer
+                                    </div>
+                                    <div class="card-body">
+                                        <small class="text-muted">REVERGY SL.<br>
+                                            Calle Isaac Newton, 3, Edificio Bluenet, 41092 Sevilla.<br>
+                                            +34 955 024 681
+                                        </small>
+                                    </div>
+                                    <!-- <div class="card-footer">
+                                        <div class="clearfix">
+                                            <div class="float-right">
+                                                <button class="btn btn-success">Botão de Acesso</button>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fa-solid fa-microchip" style="color: #ffffff;"></i>&nbsp;&nbsp;
+                                        Técnico informático.
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="miDiv" id="miDiv">
+                                            <p class="texto-oculto" id="texto">Texto oculto</p>
+                                        </div>
+                                        <small class="text-muted">AutoDistribución Híspalis.<br>
+                                            Calle Antonio de la Peña y López, Carretera Amarilla, 5,
+                                            Polígono I,
+                                            41007 Sevilla. <br>
+                                            +34 954 999 262
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <script>
+                                const miDiv = document.getElementById('miDiv');
+                                const texto = document.getElementById('texto');
+                                let ampliado = false;
+
+                                miDiv.addEventListener('click', () => {
+                                    if (!ampliado) {
+                                        miDiv.classList.add('ampliado');
+                                        texto.classList.add('mostrado');
+                                    } else {
+                                        miDiv.classList.remove('ampliado');
+                                        texto.classList.remove('mostrado');
+                                    }
+                                    ampliado = !ampliado;
+                                });
+                            </script>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

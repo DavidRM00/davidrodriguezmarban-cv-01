@@ -240,7 +240,7 @@ video.background {
         font-size: 4.5vw;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width500) {
         video.background {
             height: 100%;
             width: 100%;
