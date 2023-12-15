@@ -100,7 +100,7 @@
     border: 2px solid #f5f6f110;
 }
 
-@media (max-width: 451px) {
+@media (max-width: 768px) {
 
     .listali {
         justify-content: center;
@@ -121,6 +121,8 @@
     .cardo {
         margin-left: 0;
         /* Elimina el margen en pantallas pequeñas */
+        width: 100%;
+
     }
 
     .timeline {
@@ -140,7 +142,7 @@
 }
 
 /* Agrega margen entre la línea de tiempo y los cards en pantallas grandes */
-@media (min-width: 451px) {
+@media (min-width: 768px) {
     .lista {
         margin-right: 2rem;
         /* Agrega margen a la derecha de la línea de tiempo en pantallas grandes */
