@@ -239,16 +239,28 @@ video.background {
     .cexp {
         font-size: 4.5vw;
     }
+}
 
-    @media (max-width500) {
-        video.background {
-            height: 100%;
-            width: 100%;
-        }
+@media (max-width: 991px) {
 
-        .containerfoto img {
-            width: 200px;
-            height: 200px;
-        }
+    .containerfoto img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .containerfoto img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .containerfoto img {
+        width: 210px;
+        height: 210px;
     }
 }
