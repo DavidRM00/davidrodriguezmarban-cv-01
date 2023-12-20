@@ -1,0 +1,35 @@
+.section.cta-section {
+    height: 44.44em;
+    align-items: flex-end;
+    padding: 4.17em;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.section.cta-section {
+    height: 44.44em;
+    align-items: flex-end;
+    padding: 4.17em;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.section.cta-section {
+    height: 44.44em;
+    align-items: flex-end;
+    padding: 4.17em;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-image {
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+}
